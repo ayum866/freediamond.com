@@ -42,6 +42,7 @@
                 </select>
             </div>
     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+     <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
   <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out">
                 Generate Diamonds
             </button>
@@ -70,11 +71,6 @@
 
    messageContainer.textContent = `Generating ${diamonds} diamonds for ID: ${ffId}... (This is a simulation)`;
 
-   setTimeout(() => {
-                // messageContainer.textContent = "Operation successful! Please wait up to 24 hours for the diamonds to be credited to your account. (This is a simulation)";
-                // Redirect to success page
-                window.location.href = "success.html"; // Create a new file named success.html
-            }, 3000);
         });
     </script>
 </body>
